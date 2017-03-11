@@ -1,0 +1,124 @@
+@media (max-width: 991px) {
+  .header {
+    height: 840px; }
+  .service-block__info {
+    font-size: 17px; }
+  .about-me__btn-work {
+    margin-bottom: 20px;
+    margin-right: 0; }
+  .about-me__btn-hire {
+    margin-bottom: 90px; } }
+
+@media (min-width: 768px) {
+  .navbar-toggle {
+    display: block; }
+  .navbar-header {
+    float: none; 
+    }
+    
+}
+
+@media (max-width: 767px) {
+  .header {
+    height: auto; }
+  .sl-block {
+    top: 100%;
+    width: auto; }
+  .service__btn {
+    display: block; }
+  .service-block {
+    margin-bottom: 25px;
+    background: #2dbe6b;
+    padding-top: 30px;
+    -webkit-transition: 1s;
+    transition: 1s; }
+  .service-block > .service__btn {
+    display: block;
+    -webkit-transition: 1s;
+    transition: 1s; }
+  .service-block > .service-block__info {
+    padding-bottom: 36px;
+    -webkit-transition: 1s;
+    transition: 1s; }
+    .services {
+        padding-top: 490px;
+    }
+}
+
+@media (max-width: 700px) {
+  .modal-dialog {
+    width: 50%; } }
+
+@media (max-width: 500px) {
+  .service .col-xs-6 {
+    width: 100%; } }
+
+@media screen and (max-width: 991px){
+    .hire-me__form {
+        margin-left: 7%;
+    }
+}
+    
+    @media screen and (min-width:652px) and (max-width:767px) {
+        .sl-block {
+            margin: 0 6%;
+        }
+    }
+
+@media screen and (min-width:440px) and (max-width:570px) {
+    figure.effect-ruby p {
+        padding: 1em;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    .work__img_info {
+        font-size: 15px;
+    }
+    
+    .clients li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .services__item {
+        width: 90.333333%;
+        padding-bottom: 50px;
+    }
+    
+    .services__item2 {
+        margin-left: 0;
+    }
+    
+    .services__item_title {
+        margin-left: 70px;
+    }
+}
+
+@media screen and (max-width: 440px){
+    .work__content_mod {
+        width: 78%;
+        margin: 0 10%;
+    }
+    
+    .services {
+        padding-top: 300px;}
+}
+
+@media screen and (max-width: 340px){
+    .work__content_mod {
+        width: 100%;
+        margin: 0 1%;
+    }
+    
+    .container {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    
+    .hire-me__form-control {
+        margin-right: 20px;
+    }
+}

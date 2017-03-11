@@ -1,0 +1,15 @@
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url(../fonts/roboto-regular_[allfont.ru].ttf);
+   }
+
+@font-face {
+    font-family: 'RobotoBold';
+    src: url(../fonts/roboto-bold_[allfont.ru].ttf);
+   }
+
+@font-face {
+    font-family: 'RobotoMedium';
+    src: url(../fonts/roboto-medium_[allfont.ru].ttf);
+   }

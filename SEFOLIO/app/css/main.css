@@ -1,0 +1,632 @@
+@import url(../css/css-resert.css);
+
+@font-face {
+  font-family: 'Asap', sans-serif;
+  src: url("../fonts/Asap/Asap-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Karla', sans-serif;
+  src: url("../fonts/Karla/Karla-Regular.ttf"); }
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  font-family: 'Karla', sans-serif;
+  -webkit-transition: .5s;
+  transition: .5s; }
+
+.header {
+  height: 800px;
+  background-image: url(../img/header_bgr.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .header .header__logo {
+    font-family: 'Asap', sans-serif;
+    font-size: 28.18px;
+    color: #fff;
+    padding-top: 40px; }
+  .header .header__logo-elem {
+    color: #2ec06c;
+    font-weight: bold; }
+  .header .header__title-elem {
+    font-weight: bold; }
+
+.header__title {
+  color: #fff;
+  font-size: 40px;
+  letter-spacing: 1px; }
+
+.header-sl {
+  padding-bottom: 120px;
+  margin-top: 180px; }
+
+#carousel-header > .carousel-indicators {
+  left: 126%;
+  width: auto; }
+  #carousel-header > .carousel-indicators li {
+    display: block;
+    margin-bottom: 5px; }
+
+.aside-nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: auto;
+  width: 30%;
+  margin: 0;
+  background: #171717;
+  z-index: 50;
+}
+
+.header-nav {
+    padding-top: 30px;
+}
+
+
+
+.list-group-item {
+  background: none;
+  border: none;
+  padding: 0 0 16px 17px; }
+
+.list-group-link {
+  color: #c4c4c4;
+  font-size: 18px;
+  font-family: 'Asap', sans-serif;
+  text-decoration: none; }
+
+.list-group-link:hover,
+.list-group-link:active,
+.list-group-link:focus {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none; }
+
+.navbar-toggle .icon-bar {
+  background: #fff;
+  height: 3px; }
+
+.navbar-toggle {
+  margin-top: 36px; }
+
+.close {
+  font-size: 45px;
+  color: #000;
+  font-weight: normal;
+  opacity: 1;
+  float: none;
+  position: absolute;
+  left: -45px;
+  top: 70px; }
+
+.service-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
+  -webkit-transition: background .5s ease-in-out;
+  transition: background .5s ease-in-out; }
+
+.service-block__form {
+  border: 1px solid #fff;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  padding: 11px;
+  margin-bottom: 31px; }
+
+.service-block__info {
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: 1px;
+  -webkit-transition: 1s;
+  transition: 1s; }
+
+.service__btn {
+  color: #fff;
+  font-size: 18px;
+  padding: 18px 0;
+  width: 100%;
+  background: #27ae60;
+  border: 0;
+  display: none;
+  -webkit-transition: 1s;
+  transition: 1s; }
+
+.service-block:hover {
+  background: #2dbe6b;
+  padding-top: 30px;
+  -webkit-transition: 1s;
+  transition: 1s; }
+
+.service-block:hover > .service__btn {
+  display: block;
+  -webkit-transition: 1s;
+  transition: 1s; }
+
+.service-block:hover > .service-block__info {
+  padding-bottom: 36px;
+  -webkit-transition: 1s;
+  transition: 1s; }
+
+.content {
+  position: relative; }
+
+.about-me__wrapper-bg {
+  background-image: url(../img/about_bg.jpg);
+  background-size: contain; }
+
+.about-me__title {
+  color: #191919;
+  font-size: 30px;
+  font-family: 'Asap', sans-serif;
+  padding-top: 100px;
+  padding-bottom: 30px; }
+
+.about-me__title-elem {
+  font-weight: bold; }
+
+.about-me__info {
+  color: #404040;
+  font-size: 16px;
+  line-height: 29px;
+  padding-bottom: 52px; }
+
+.about-me__btn-work {
+  border: 1px solid #2ec06c;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  color: #2ec06c;
+  font-size: 18px;
+  background: none;
+  padding: 21px 64px;
+  margin-right: 20px;
+  margin-bottom: 90px; }
+
+.about-me__btn-work:hover {
+  background: #2ec06c;
+  color: #fff; }
+
+.about-me__btn-hire {
+  border: 1px solid #2ec06c;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  color: #2ec06c;
+  font-size: 18px;
+  background: none;
+  padding: 21px 64px; }
+
+.about-me__btn-work,
+.about-me__btn-hire {
+  -webkit-transition: 1s;
+  transition: 1s; }
+
+.about-me__btn-work:hover,
+.about-me__btn-hire:hover {
+  color: #fff;
+  background: #2ec06c;
+  -webkit-transition: .5s;
+  transition: .5s; }
+
+.sl-block {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 47%; }
+  .sl-block #carousel-1 > .carousel-indicators {
+    left: 34%;
+    width: auto;
+    bottom: 43%; }
+    .sl-block #carousel-1 > .carousel-indicators .active {
+      background: #30c26d; }
+    .sl-block #carousel-1 > .carousel-indicators li {
+      display: block;
+      margin-bottom: 5px;
+      background: #404040;
+      border: none; }
+
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/*SERVICES*/
+.services {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.services__title {
+    color: #1f1f1f;
+    font-family: "Asap";
+    font-size: 30px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.services__title span {
+    font-weight: 700;
+}
+
+.services__info {
+    color: #1f1f1f;
+    font-family: "Asap";
+    font-size: 18px;
+    padding-bottom: 50px;
+}
+
+.services__item {
+    text-align: left;
+}
+
+.services__item_title {
+    color: #1f1f1f;
+    font-family: "Asap";
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    margin-top: 0;
+}
+
+.services__item_info {
+    color: #656565;
+    font-family: "Karla";
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.services__container {
+    padding-bottom: 50px;
+}
+
+
+/*CLIENTS*/
+.clients {
+    background-image: url(../img/clients_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 150px;
+}
+
+.clients__info {
+    color: #fff;
+    font-family: "Asap";
+    font-size: 18px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+
+.clients li {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.clients li:last-child {
+    margin-right: 0;
+}
+
+.clients .glyphicon-chevron-left:before {
+    content: none ;
+}
+
+.clients .glyphicon-chevron-left:hover {
+    color: #2ec06c;
+}
+
+
+.clients .glyphicon-chevron-right:hover {
+    color: #2ec06c;
+}
+
+
+
+
+.clients .glyphicon-chevron-right:before {
+    content: none;
+}
+
+.clients .carousel-control.left {
+    background-image: none;
+}
+
+.clients .carousel-control.right {
+    background-image: none;
+}
+
+
+/*WORK*/
+.work {
+    text-align: center;
+}
+
+.work__title {
+    color: #1f1f1f;
+    font-family: "Asap";
+    font-size: 30px;
+    padding-top: 90px;
+    line-height: 40px;
+}
+
+.work__title span {
+    color: #2ec06c;
+    font-weight: 700;
+}
+
+.work__info {
+    color: #656565;
+    font-family: "Karla";
+    font-size: 16px;
+    padding-top: 30px;
+    line-height: 30px;
+}
+
+.work__content {
+    padding-top: 65px;
+}
+
+.work__img_info {
+    height: 70px;
+    -moz-border-radius: 0 0 10px 10px;
+    -webkit-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+    background-color: #ededed;
+    max-width: 300px;
+    color: #1f1f1f;
+    font-family: "Asap";
+    font-size: 20px;
+    padding-top: 25px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/*FEEDBACK*/
+.feedback {
+    background-image: url(../img/feedback_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.feedback__title {
+    color: #fff;
+    font-family: "Asap";
+    font-size: 18px;
+    padding-top: 106px;
+    line-height: 29px;
+}
+
+.feedback__info {
+    color: #fff;
+    font-family: "Asap";
+    font-size: 18px;
+    font-style: italic;
+    padding-top: 30px;
+    padding-bottom: 106px;
+}
+
+.feedback__info span {
+    color: #2dbf6c;
+    font-family: "Asap";
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.carousel-indicators li {
+    background-color: #b3b3b3;
+    border: 1px solid #b3b3b3;
+    border-radius: 10px;
+}
+
+.carousel-indicators .active, .carousel-indicators li:hover {
+    background-color: #2ec06c;
+    border: 1px solid #2ec06c;
+}
+
+
+/*HIRE ME*/
+.hire-me {
+    text-align: center;
+}
+
+.hire-me__title {
+    color: #1f1f1f;
+    font-family: "Asap";
+    font-size: 30px;
+    line-height: 40px;
+    padding-top: 85px;
+}
+
+.hire-me__title span {
+    color: #2ec06c;
+    font-weight: 700;
+}
+
+.hire-me__info {
+    color: #656565;
+    font-family: "Karla";
+    font-size: 16px;
+    line-height: 30px;
+    padding-top: 30px;
+}
+
+.hire-me__content {
+     padding-top: 60px;   
+}
+
+.hire-me__btn {
+    width: 140px;
+    height: 140px;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: all 0.4s ease;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.facebook {
+    color: #3b5998;
+    border: 2px solid #3b5998;
+}
+
+.facebook:hover {
+    color: #fff;
+    background-color: #3b5998;
+}
+
+.twitter {
+    color: #00aced;
+    border: 2px solid #00aced;
+}
+
+.twitter:hover {
+    color: #fff;
+    background-color: #00aced;
+}
+
+.instagram {
+    color: #517fa4;
+    border: 2px solid #517fa4;
+}
+
+.instagram:hover {
+    color: #fff;
+    background-color: #517fa4;
+}
+
+.dribbble {
+    color: #ff0084;
+    border: 2px solid #ff0084;
+}
+
+.dribbble:hover {
+    color: #fff;
+    background-color: #ff0084;
+}
+
+.hire-me__form-control {
+    
+    height: 50px;
+    padding-left: 20px;
+    border: 1px solid #bababa;
+    border-radius: 3px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    outline-color: #2dbf6b;
+    
+}
+
+.hire-me__form-control_text {
+    
+    height: 161px; -moz-border-radius: 5px 0 0 5px;
+    -webkit-border-radius: 5px 0 0 5px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #bababa;
+    padding-left: 20px;
+    padding-top: 20px;
+    outline-color: #2ec06c;
+    margin-bottom: 100px;
+}
+
+.hire-me__form_btn {
+    width: 40px;
+    height: 161px;
+    -moz-border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+    -moz-background-clip: padding;
+    background-color: #2dbf6b; 
+    padding: 0;
+    vertical-align: top;
+    outline: #2ec06c;
+    
+}
+
+input[type="text"]::-webkit-input-placeholder {
+    color: #656565; /* text color */
+    font-family: "Asap";
+    font-size: 16px;
+    font-style: italic;
+}
+input[type="text"]::-moz-placeholder          {color: #656565; /* text color */
+font-family: "Asap";
+font-size: 16px;
+font-style: italic;}/* Firefox 19+ */
+input[type="text"]:-moz-placeholder           {color: #656565; /* text color */
+font-family: "Asap";
+font-size: 16px;
+font-style: italic;}/* Firefox 18- */
+
+input[type="email"]::-webkit-input-placeholder {color: #656565; /* text color */
+font-family: "Asap";
+font-size: 16px;
+font-style: italic;}
+input[type="email"]::-moz-placeholder          {color: #656565; /* text color */
+font-family: "Asap";
+font-size: 16px;
+font-style: italic;}/* Firefox 19+ */
+input[type="email"]:-moz-placeholder           {color: #656565; /* text color */
+font-family: "Asap";
+font-size: 16px;
+font-style: italic;}/* Firefox 18- */
+
+textarea:-ms-input-placeholder      {color: #656565; /* text color */
+font-family: "Asap";
+font-size: 16px;
+font-style: italic;}
+textarea::-webkit-input-placeholder {color: #656565; /* text color */
+font-family: "Asap";
+font-size: 16px;
+font-style: italic;}
+textarea::-moz-placeholder          {color: #656565; /* text color */
+font-family: "Asap";
+font-size: 16px;
+font-style: italic;}/* Firefox 19+ */
+textarea:-moz-placeholder           {color: #656565; /* text color */
+font-family: "Asap";
+font-size: 16px;
+font-style: italic;}/* Firefox 18- */
+textarea:-ms-input-placeholder      {color: #656565; /* text color */
+font-family: "Asap";
+font-size: 16px;
+font-style: italic;}
+
+/*FOOTER*/
+
+.footer {
+    background-color: #eeeeee;
+}
+
+.footer__info {
+    color: #2e2e2e;
+    font-family: "Asap", sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    padding: 20px 0;
+}
+
+.footer__info span {
+    color: #2ec06c;
+    font-weight: 700;
+}

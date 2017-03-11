@@ -1,0 +1,313 @@
+@import url(../css/css-resert.css);
+@import url(../css/bootstrap.min.css);
+
+ @font-face {
+	font-family: 'Asap', sans-serif;
+	src: url('../fonts/Asap/Asap-Regular.ttf');
+}
+
+ @font-face {
+	font-family: 'Karla', sans-serif;
+	src: url('../fonts/Karla/Karla-Regular.ttf');
+}
+
+
+/********** CSS clearfix ***********/
+
+.skills::before,
+.skills::after {
+    content:"";
+    display:table;
+}
+
+.skills::after {
+    clear:both;
+}
+
+.skills {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    transition: .5s;
+    
+}
+
+//header
+
+.header {
+    height: 800px;
+    background-image: url(../img/header_bgr.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .header__logo{
+        font-family: 'Asap', sans-serif;
+        font-size: 28.18px;
+        color: #fff;
+        padding-top: 40px;
+//        padding-bottom: 120px;
+    }
+    .header__logo-elem {
+        color: #2ec06c;
+        font-weight: bold;
+    }
+   
+    .header__title-elem {
+        font-weight: bold;
+    }
+}
+
+ .header__title {
+        color: #fff;
+        font-size: 40px;
+//        padding-bottom: 120px;
+        letter-spacing: 1px;
+//        margin-top: 180px;
+    }
+
+//header-sl
+
+.header-sl {
+    padding-bottom: 120px;
+    margin-top: 180px;
+}
+
+#carousel-header > .carousel-indicators {
+    left: 126%;
+    width: auto;
+    li {
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+
+//header-boostrap-sidebar
+
+//смена стилей для модального окна
+
+    .modal-dialog {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: auto;
+        width: 30%;
+        margin: 0;
+        background: #171717;
+        .modal-content {
+            border: none;
+            background: none;
+            box-shadow: none;
+            border-radius: 0;
+            .modal-header {
+                border: none;
+            }
+        }
+    }
+
+// список в модальном
+
+.modal-header {
+    padding-left: 32px;
+}
+
+.list-group-item {
+    background: none;
+    border: none;
+    padding: 0 0 16px 17px;
+}
+
+ .list-group-link {
+    color: #c4c4c4;
+    font-size: 18px;
+    font-family: 'Asap', sans-serif; 
+    text-decoration: none;
+    
+}
+
+ .list-group-link:hover,
+.list-group-link:active,
+.list-group-link:focus {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+    
+//белые полоски бургера
+
+.navbar-toggle .icon-bar {
+    background: #fff;
+    height: 3px;
+}
+
+//отступ для кнопки бургера
+
+.navbar-toggle {
+    margin-top: 57px;
+}
+
+//крестик закрытия сайдбара
+
+.close {
+    font-size: 45px;
+    color: #fff;
+    font-weight: normal;
+    opacity: 1;
+    float: none;
+    position: absolute;
+    left: -45px;
+    top: 70px;
+}
+
+//header-boostrap-sidebar end
+
+
+.service-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+//    margin-bottom: 90px;
+    padding-top: 30px;
+    transition:background .5s ease-in-out;
+}
+
+
+.service-block__form {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 11px;
+    margin-bottom: 31px;
+}
+
+.service-block__info {
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: 1px;
+    transition: 1s;
+}
+
+.service__btn {
+    color: #fff;
+    font-size: 18px;
+    padding: 18px 0;
+    width: 100%;
+    background: #27ae60;
+    border: 0;
+    display: none;
+    transition: 1s;
+}
+
+.service-block:hover {
+    background: #2dbe6b;
+    padding-top: 30px;
+    transition: 1s;
+}
+
+.service-block:hover > .service__btn {
+    display: block;
+    transition: 1s;
+}
+
+.service-block:hover > .service-block__info {
+    padding-bottom: 36px;
+    transition: 1s;
+}
+
+//main
+
+.content {
+    position: relative;
+}
+
+//about-me
+
+.about-me__wrapper-bg {
+    background-image: url(../img/about_bg.jpg);
+    background-size: contain;
+}
+
+.about-me__title {
+    color: #191919;
+    font-size: 30px;
+    font-family: 'Asap', sans-serif;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+.about-me__title-elem {
+    font-weight: bold;
+}
+
+.about-me__info {
+    color: #404040;
+    font-size: 16px;
+    line-height: 29px;
+    padding-bottom: 52px;
+}
+
+.about-me__btn-work {
+    border: 1px solid #2ec06c;
+    border-radius: 5px;
+    color: #2ec06c;
+    font-size: 18px;
+    background: none;
+    padding: 21px 64px;
+    margin-right: 20px;
+    margin-bottom: 90px;
+}
+
+.about-me__btn-work:hover {
+    background: #2ec06c;
+    color: #fff;
+}
+
+.about-me__btn-hire {
+    border: 1px solid #2ec06c;
+    border-radius: 25px;
+    color: #2ec06c;
+    font-size: 18px;
+    background: none;
+    padding: 21px 64px;
+}
+
+.about-me__btn-work,
+.about-me__btn-hire {
+    transition: 1s;
+}
+
+.about-me__btn-work:hover,
+.about-me__btn-hire:hover {
+    color: #fff;
+    background: #2ec06c;
+    transition: .5s;
+}
+
+//slider
+
+.sl-block {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 47%;
+    #carousel-1 > .carousel-indicators {
+    left: 34%;
+    width: auto;
+    bottom: 43%;
+        .active {
+            background: #30c26d;
+        }
+    li {
+        display: block;
+        margin-bottom: 5px;
+        background: #404040;
+        border: none;
+    }
+}
+}

@@ -1,0 +1,659 @@
+@import url(../css/css-resert.css);
+
+//FONTS
+
+@font-face {
+	font-family: 'BebasNeue Regular';
+	src: url('../fonts/BebasNeue Regular.eot');
+	src: url('../fonts/BebasNeue Regular.ttf');
+	src: url('../fonts/BebasNeue Regular.woff');
+}
+
+@font-face {
+	font-family: 'Oswald', sans-serif;
+	src: url('../fonts/oswald_bold.ttf');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+//header
+
+header {
+    height: 110px;
+}
+
+.logo {
+    font-family: 'BebasNeue Regular';
+    font-size: 70px;
+    color: #474444;
+    display: inline-block;
+    line-height: 110px;
+//    margin-top: 31px;
+//    margin-bottom: 30px;
+    span {
+        color: #fd5433;
+    }
+}
+
+.nav {
+    li {
+        float: left;
+        
+        a {
+            font-size: 17px;
+            color: #565656;
+            font-family: 'Oswald', sans-serif;
+            padding: 48px 17px 47px 16px;
+        }
+        .active-nav {
+            color: #fff;
+            background-color: #fd5433;
+        }
+        a:hover {
+            color: #fff;
+            background-color: #fd5433;
+        }
+        a:focus {
+            text-decoration: none;
+        }
+    }
+    
+}
+
+.home {
+    height: 800px;
+    width: auto;
+    background: url(../images/header/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    .title-home {
+        padding-top: 245px;
+        padding-bottom: 58px;
+        text-align: center;
+        font-size: 124px;
+        color: #fff;
+        font-family: 'BebasNeue Regular';
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    }
+     a {
+        font-size: 32px;
+        color: #fff;
+        font-family: 'Oswald', sans-serif;
+        line-height: 60px;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.68);
+        .btn-zakaz {
+            margin: 0 auto;
+            border-radius: 5px;
+            width: 282px;
+            height: 60px;
+            background-color: #fd5433;
+            box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.8);
+        }
+    }
+    .btn-zakaz:hover {
+        background-color: #e84e2f;
+    }
+    .btn-zakaz:active {
+        background-color: #ac2925;
+        border-color: #761c19;
+        box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    }
+}
+
+.title-h2 {
+        font-size: 32px;
+        font-family: 'Oswald', sans-serif;
+        color: #fd5433;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 37px;
+        margin-bottom: 35px;
+    }
+
+.services {
+    
+    .line {
+        width: 100%;
+        height: 1px;
+        background: #828282;
+        margin-bottom: 64px;
+    }
+    .branding {
+        text-align: center;
+        .title-branding {
+            font-size: 30px;
+            font-family: 'Oswald', sans-serif;
+            color: rgb(61, 60, 60);
+            margin: 32px 0 36px 0;
+        }
+        p {
+            margin-bottom: 79px;
+            font-size: 16px;
+            font-family: "Arial";
+            color: rgb(18, 18, 18);
+            line-height: 20px;
+        }
+    }
+}
+
+.portfolio {
+    .line {
+        width: 100%;
+        height: 1px;
+        background: #828282;
+        margin-bottom: 37px;
+    }
+//    .title-portfolio {
+//        font-size: 32px;
+//        font-family: 'oswald_bold';
+//        color: rgb(253, 84, 51);
+//        font-weight: bold;
+//        text-align: center;
+//        margin-bottom: 35px;
+//    }
+    .col-md-3 {
+        padding: 0;
+    }
+}
+
+
+    .line {
+        width: 100%;
+        height: 1px;
+        background: #828282;
+        margin-bottom: 65px;
+    }
+    .about-skills {
+        margin-top: 65px;
+        height: 400px;
+        width: 100%;
+        background: #fd5433;
+        .about {
+            .name {
+                font-size: 22px;
+                font-family: 'Oswald', sans-serif;
+                color: rgb(255, 255, 255);
+                font-weight: bold;
+                text-align: left;
+                margin-top: 69px;
+                margin-bottom: 54px;
+            }
+            .info-text {
+                font-size: 16px;
+                font-family: "Arial";
+                color: rgb(255, 255, 255);
+                line-height: 20px;
+                text-align: left;
+                margin-bottom: 52px;
+            }
+            a {
+                margin-right: 20px;
+            }
+        }
+        .skills {
+            h2 {
+                font-size: 22px;
+                font-family: 'Oswald', sans-serif;
+                color: rgb(255, 255, 255);
+                font-weight: bold;
+                text-align: left;
+                margin-top: 69px;
+                margin-bottom: 54px;
+            }
+            p {
+                font-size: 16px;
+                font-family: "Arial";
+                color: rgb(255, 255, 255);
+                line-height: 1.25;
+                text-align: left;
+                margin-bottom: 18px;
+            }
+        }
+        .skills-rate {
+            .first-skill {
+                margin-top: 144px;                
+            }
+            p {
+                font-size: 16px;
+                font-family: "Arial";
+                color: rgb(255, 255, 255);
+                line-height: 1.25;
+                text-align: left;
+                margin-bottom: 18px;
+            }
+            
+            .bar {
+                display: inline-block;
+                background-color: #fff;
+                height: 10px;    
+                margin-bottom: 24px;
+            }
+            .bar_1 {
+                margin-top: 150px;
+                width: 100%; 
+            }
+            .bar_2 {
+               width: 98%;
+            }
+            .bar_3 {
+                width: 67%;
+            }
+            .bar_4 {
+                width: 70%;
+            }
+            .bar_5 {
+                width: 58%;
+            }
+        }
+    }
+
+
+.latest-posts {
+    .line {
+        width: 100%;
+        height: 1px;
+        background: #828282;
+        margin-bottom: 65px;
+    }
+}
+
+.title-post {
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(61, 60, 60);
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.post-date {
+  font-size: 15px;
+  font-family: 'Oswald', sans-serif;
+  color: rgb(104, 104, 104);
+  font-weight: bold;
+    margin-bottom: 58px;
+}
+
+.date-border {
+    padding-bottom: 15px;
+    border-bottom: 4px solid #fd5433;
+}
+
+.post-info {
+    line-height: 20px;
+  font-size: 16px;
+  font-family: "Arial";
+  color: rgb(61, 60, 60);
+}
+
+.romania-dubai {
+    margin-top: 91px;
+}
+
+
+    .line-contact {
+        width: 100%;
+        height: 1px;
+        background: #828282;
+        margin-top: 100px;
+    }
+
+.footer {
+    height: 567px;
+    width: auto;
+    background-image: url(../images/main/footer-bgr.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .name-here {
+        height: 58px;
+        width: 100%;
+        border: 1px solid #cac9c9;
+        margin-top: 29px;
+        margin-bottom: 29px;
+        font-size: 20px;
+        color: #fd5433;
+        padding-left: 22px;
+    }
+    .message {
+        padding-left: 22px;
+        padding-top: 20px;
+        height: 230px;
+        width: 100%;
+        font-size: 20px;
+        color: #fd5433;
+        margin-bottom: 22px;
+        placeholder: red;
+    }
+    
+    input[type="text"]::-webkit-input-placeholder {color:#fd5433;}
+input[type="text"]::-moz-placeholder          {color:#fd5433;}/* Firefox 19+ */
+input[type="text"]:-moz-placeholder           {color:#fd5433;}/* Firefox 18- */
+    
+input[type="email"]::-webkit-input-placeholder {color:#fd5433;}
+input[type="email"]::-moz-placeholder          {color:#fd5433;}/* Firefox 19+ */
+input[type="email"]:-moz-placeholder           {color:#fd5433;}/* Firefox 18- */
+
+textarea:-ms-input-placeholder      {color:#fd5433;}
+textarea::-webkit-input-placeholder {color:#fd5433;}
+textarea::-moz-placeholder          {color:#fd5433;}/* Firefox 19+ */
+textarea:-moz-placeholder           {color:#fd5433;}/* Firefox 18- */
+textarea:-ms-input-placeholder      {color:#fd5433;}
+    
+    
+    .link-message  {
+        font-size: 32px;
+        color: #fff;
+        font-family: 'Oswald', sans-serif;
+        line-height: 60px;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.68);
+        .btn-message {
+            height: 60px;
+            background-color: #fd5433;
+            box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.8);
+            text-align: center;    
+        }
+    }
+    .btn-message:hover {
+        background-color: #e84e2f;
+    }
+    .btn-message:active {
+        background-color: #ac2925;
+        border-color: #761c19;
+        box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    }
+    .contact {
+        margin-top: 85px;
+        .text {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .line {
+            width: 100%;
+            height: 1px;
+            background: #fff;
+            margin-bottom: 25px;
+        }
+        .year {
+            
+            padding-right: 8px;
+            border-right: 2px solid #fff;
+        }
+        .theme {
+            margin-left: 8px;
+            padding-right: 8px;
+            border-right: 2px solid #fff;
+            margin-right: 8px;
+        }
+        p {
+            border-right: 2px solid #fff;
+            line-height: 1px;
+            font-size: 18px;
+            font-family: "Arial";
+            float: left;
+            color: #fff;
+            span {
+                font-weight: bold;
+            }
+            }
+        p:last-child {
+            border-right: none;
+        }
+    }
+}
+
+//треугольники
+
+#monro {
+    position: relative;
+}
+
+#monro:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 16%;
+    width: 0;
+    height: 0;
+    border-top: 36px solid #fff;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+}
+
+#smith {
+    position: relative;
+}
+
+#smith:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 37.5%;
+    width: 0;
+    height: 0;
+    border-top: 36px solid #fff;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+}
+
+#djulia {
+    position: relative;
+}
+
+#djulia:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 59.5%;
+    width: 0;
+    height: 0;
+    border-top: 36px solid #fff;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+}
+
+#candy {
+    position: relative;
+}
+
+#candy:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 80.5%;
+    width: 0;
+    height: 0;
+    border-top: 36px solid #fff;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+}
+
+//media
+
+@media screen and (max-width: 1199px) {
+    .nav li a {
+        padding: 48px 10px 47px 10px;
+    }
+    .home {
+    height: 600px;
+        .title-home {
+            font-size: 7em;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .about-us .about-skills .about .info-text {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 875px) {
+    .home .title-home {
+        font-size: 5em;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    #monro:after {
+        left: 13%;
+    }
+    #smith:after {
+        left: 35.5%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .services .branding p {
+        width: 306px;
+        margin-left: calc(50% - 153px);
+    }
+    .latest-posts {
+        .container {
+//            text-align: -webkit-center;
+            width:  343px;
+        }
+        article {
+//            width:  343px;
+            margin: 10px 0;
+            }
+    }
+    .romania-dubai {
+        margin-top: 0;
+    }
+    .about-us .about-skills {
+        height: 666px;
+    }
+    .footer .name-here {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    .footer .emeil-here {
+        margin-bottom: 10px;
+    }
+    .footer .contact {
+        margin-top: 57px;
+    }
+    #monro:after {
+        left: 10%;
+    }
+}
+
+@media screen and (max-width: 709px) {
+    .nav li a {
+        font-size: 15px;   
+    }
+    .home .title-home {
+        font-size: 5em;
+    }
+}
+
+@media screen and (max-width: 652px) {
+    .nav li a {
+        font-size: 12px;
+        padding: 49px 10px 49px 10px;
+    }
+    .home .title-home {
+        font-size: 4em;
+    }
+    .home {
+        height: 552px;
+    }
+    
+}
+
+@media screen and (max-width: 565px) {
+    .nav {
+        width: 100%;
+        padding: 0;
+    }
+    .nav li {
+        float: none;
+        text-align: center;
+    }
+    .nav li a {
+        padding: 20px;
+    }
+    #smith:after {
+        left: 34%;
+    }
+    
+}
+
+@media screen and (max-width: 545px) {
+    .footer .contact p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 489px) {
+    .about-us .about-skills {
+        height: 695px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .footer .contact p {
+        font-size: 12px;
+    }
+    #monro:after {
+        left: 8%;
+    }
+    #smith:after {
+        left: 33%;
+    }
+}
+
+@media screen and (max-width: 418px) {
+    .about-us .about-skills {
+        height: 707px;
+    }
+    .about-us .about-skills .skills p {
+        font-size: 14px;
+    }
+    .about-us .about-skills .skills-rate .bar_1 {
+    margin-top: 146px;
+    }
+    .about-us .about-skills .skills-rate p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 381px) {
+    .about-us .about-skills {
+        height: 740px;
+    }
+    .about-us .about-skills .skills p {
+        font-size: 13px;
+    }
+    .about-us .about-skills .skills-rate p {
+        font-size: 13px;
+    }
+    .about-us .about-skills .skills-rate .bar {
+        margin-bottom: 21px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .latest-posts .container {
+        width: 300px;
+    }
+    .latest-posts article {
+        padding-left: 5px;
+    }
+    .footer .contact p {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,138 @@
+
+//header 
+
+@media (max-width: 917px) {
+    .header_left a {
+        padding-right: 10px;
+    }
+    .header_left .beauti-blog {
+        margin-right: 10px;
+    }
+    .header_right .header_btn {
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 862px) {
+    .header_logo img {
+        width: 60%;
+    }
+    .header_logo p {
+        width: 250px;
+    }
+    .header_right {
+        position: relative;
+    }
+    .header_right .header_btn {
+        position: absolute;
+        top: 24px;
+        right: 0px;
+    }
+}
+
+@media (max-width: 800px) {
+    .blog_item {
+        flex-direction: column;
+        align-items: center;
+    }
+    .blog_item .blog_info a h2 {
+        text-align: center;
+    }
+    
+}
+
+@media (max-width: 727px) {
+    .header {
+        height: 340px;
+    }   
+    .header_block {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header_right .header_btn {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+    .header_logo img {
+    width: 100%;
+    }
+    .header_logo p {
+        width: 300px;
+    }
+    .header_line {
+        margin-top: 190px;
+    }
+    .menu_block ul li {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 520px) {
+    .menu_block ul li {
+    margin-right: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .blog_item .blog_info .blog_comments-date {
+            padding-bottom: 0;
+    }
+    .blog_item .blog_info .btn_group {
+        position: relative;
+        bottom: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        height: 520px;
+    }
+    .menu_block ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header_logo img {
+        width: 80%;
+    }
+    .header_logo p {
+        width: 264px;
+    }
+    .header_right .header_btn {
+        position: absolute;
+        top: 22px;
+        right: 60px;
+    }
+    .header_right {
+        margin-top: 15px;
+    }
+    .blog_item .blog_info .blog_btn {
+        font-size: 10px;
+    } 
+    .blog_item .blog_img {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    .btn_group_blog .btn_more {
+        font-size: 10px;
+        padding: 5px 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    .content h2 {
+        font-size: 25px;
+    }
+    .blog_item .blog_info .blog_btn {
+        font-size: 9px;
+    }
+    .btn_group_blog .btn_more {
+        font-size: 9px;
+        padding: 5px 18px;
+    }
+    .blog_item .blog_img {
+        width: 100%;
+    }
+}

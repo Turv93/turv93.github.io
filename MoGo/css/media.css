@@ -1,0 +1,150 @@
+@media screen and (max-width: 1037px){
+    .service-2__content_img {
+        margin-bottom: 25px;
+    }
+    .quote__info {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 860px){
+    
+    .quote__img {
+        padding-right: 0;
+        padding-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .header__nav ol li {
+        margin-left: 30px;
+    }
+    .header__banner_info {
+        line-height: 85px;
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .menu-icon {
+        display: block;
+        float: right;
+        cursor: pointer;
+    }
+    
+    .header__nav ol li {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .header__nav li a:hover {
+        border: none;
+    }
+    
+    .header__nav {
+        float: none;
+    }
+    
+    .header__title {
+        margin-left: 29px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .header__banner_info {
+        line-height: 60px;
+        font-size: 60px;
+    }
+    .header__banner_title {
+        font-size: 40px;
+        padding-bottom: 35px;
+    }
+    .feature__img img {
+        width: 50%;
+    }
+    .feature__img2 img {
+        width: 50%;
+    }
+    .feature__img2 {
+        top: 70%;
+        left: 57%;
+    }
+    .service-2__content_img img {
+        max-width: 95%;
+    }
+}
+
+
+
+@media screen and (max-width: 500px){
+    .facts__content {
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    .facts__item {
+        border: none;
+        height: 200px;
+
+    }
+    .facts__item:last-child {
+        border: none;
+        height: 240px;
+    }
+    .quote__content {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .blog__date {
+        left: 0;
+        top: 119px;
+    }
+    
+    .blog__content_item {
+        max-width: 300px;
+    }
+    
+    .blog__content_item img {
+        max-width: 100%;
+    }
+    
+    .blog__content_line {
+        width: 300px;}
+}
+
+@media screen and (max-width: 400px){
+    .accordion__info {
+        font-size: 14px;
+    }
+    
+    .quote__info {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 370px){
+    .grid figcaption a {
+        margin-top: 55px;
+    }
+    
+    .fa-2x {
+        font-size: 1em;
+    }
+    .our-team__ico {
+        height: 40px;
+        width: 40px;
+    }
+    
+.our-team .grid figcaption a {
+        margin-top: 130px;
+    }
+    .our-team figcaption {
+        height: 82%;
+    }
+    
+    .grid li {
+        min-width: 290px;
+    }
+
+}
