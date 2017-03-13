@@ -25,8 +25,33 @@
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/set2.css" />
     <link rel="stylesheet" href="css/media.css">
+    
+    <script>
+        $(document).ready(function(){
+        // hide #back-top first
+        $("#back-top").hide();
+
+        // fade in #back-top
+        $(function () {
+        $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+        $('#back-top').fadeIn();
+        } else {
+        $('#back-top').fadeOut();
+        }
+        });
+        // scroll body to 0px on click
+        $('#back-top a').click(function () {
+        $('body,html').animate({
+        scrollTop: 0
+        }, 800);
+        return false;
+        });
+        });
+        });
+    </script>
 </head>
-<body>
+<body id="top">
     <header class="header" id="home">
         <div class="header__title_wrapper">
             <h1 class="header__title">HTML / CSS CODER</h1>
@@ -231,6 +256,9 @@ Writing semantic markup that is documented and easy to read means it can be main
 	        </ul>
 	    </div>
 	</footer>
+    <p id="back-top">
+        <a href="#top"><span></span>Back to Top</a>
+    </p>
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -240,7 +268,17 @@ Writing semantic markup that is documented and easy to read means it can be main
 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	
+	<script>
+        $(document).ready(function() {
+        $('a[href^="#"]').click(function(){
+        var el = $(this).attr('href');
+        $('body').animate({
+        scrollTop: $(el).offset().top}, 1500);
+        return false;
+        });
+        });
+    </script>
+
 	
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
