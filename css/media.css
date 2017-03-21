@@ -41,6 +41,13 @@
         -ms-flex-align: center;
             align-items: center; } }
 
+@media (max-width: 600px) {
+    #back-top span {
+    width: 65px;
+    height: 65px;
+    }
+}
+
 @media (max-width: 530px) {
   .header__title {
     font-size: 40px; } }
